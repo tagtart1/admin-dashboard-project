@@ -103,6 +103,15 @@ input[type="search"]{
     justify-content: end;
 }
 
+.top-header .upper-right-profile-icons img:hover{
+    cursor: pointer;
+}
+
+.top-header .upper-right-profile-icons img:active {
+   
+    transform: scale(.95);
+}
+
 .bottom-header .main-userinfo {
     display: flex;
     align-items: center;
@@ -116,7 +125,7 @@ input[type="search"]{
 }
 
 
-/*Sidebar selectors*/
+
 
 
 .bottom-header .user-buttons{
@@ -138,15 +147,29 @@ input[type="search"]{
     border-radius: 20px;
 }
 
+.user-buttons button:hover{
+    transition: .1s;
+    background-color: #c766d6; 
+    cursor:pointer;
+}
+
+.user-buttons button:active {
+    transition: .1s;
+    transform: scale(.95);
+}
+
 img {
     width: 30px;
     height: 30px;
+    
 }
 
 .accountpfp-1 {
     width: 40px;
     height: 40px;
 }
+
+/*Sidebar selectors*/
 
 .sidebar{
     grid-column: 1;
@@ -196,6 +219,15 @@ img {
     gap: 16px;
     font-weight: 500;
     font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-item ul li:hover {
+    text-decoration: underline;
 }
 
 .sidebar-item ul li img {
@@ -323,19 +355,14 @@ img {
 }
 
 
-/*.panel-container{
-    display: grid;
-    height: 100%;
-   
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
-    grid-auto-rows: auto;
-    
-    gap: 24px;
-  
-    margin-top: 16px;
-} */
+.panel-icons img {
+    cursor: pointer;
+}
 
+.panel-icons img:active{
+    
+    transform: scale(.95);
+}
 .panel-item {
     background-color: white;
     border-radius: 10px;
@@ -344,6 +371,11 @@ img {
  
     display: flex;
     gap: 24px;
+}
+
+.panel-item:hover {
+    transition: .25s ease-in-out;
+    transform: scale(1.01);
 }
 
 .panel-content {
