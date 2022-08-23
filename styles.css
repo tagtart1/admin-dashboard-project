@@ -368,13 +368,13 @@ a {
     border-radius: 10px;
    
     box-shadow: 6px 7px 12px 1px #cbcbcb ;
- 
+    transition: .25s;
     display: flex;
     gap: 24px;
 }
 
 .panel-item:hover {
-    transition: .25s ease-in-out;
+    
     transform: scale(1.01);
 }
 
